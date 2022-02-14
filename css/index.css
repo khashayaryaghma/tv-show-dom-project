@@ -5,10 +5,29 @@
 }
 main{
     background-image: url("../image/Game-Of-Thrones-10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 header{
     background-image: url("../image/Game-Of-Thrones-background.jpg");
+    background-size: 100% 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+.card{
+    width: 280px;
+    text-align: center;
+    min-height: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 100px;
+    background-color: #a87030e5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
 }

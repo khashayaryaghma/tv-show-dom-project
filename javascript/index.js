@@ -2055,8 +2055,8 @@ for (const el of data) {
   detail.appendChild(sum)
   img.src = el.image.medium;
   h4.textContent = `S0${el.season}E0${el.number}` + " - " + el.name;
-  div.style.width = "300px";
-  div.style.height = "300px"
+  div.classList.add("card")
+
   anchor.href = el.url;
   anchor.appendChild(h4);
   div.append(img, anchor, detail);
