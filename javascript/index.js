@@ -2051,11 +2051,12 @@ for (const el of data) {
   const anchor = document.createElement("a");
   const detail = document.createElement("details");
   const sum = document.createElement("summary");
-  sum.textContent = "summary"
-  detail.appendChild(sum)
+  sum.textContent = "summary";
+  detail.appendChild(sum);
   img.src = el.image.medium;
   h4.textContent = `S0${el.season}E0${el.number}` + " - " + el.name;
-  div.classList.add("card")
+  div.classList.add("card");
+  anchor.classList.add("links");
 
   anchor.href = el.url;
   anchor.appendChild(h4);
