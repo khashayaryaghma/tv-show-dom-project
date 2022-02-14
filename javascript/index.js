@@ -2046,8 +2046,12 @@ const data = [
 const main = document.querySelector("main");
 for (const el of data) {
   const div = document.createElement("div");
-  const img = document.createElement("img")
+  const img = document.createElement("img");
+  const h4 = document.createElement("h4");
   img.src = el.image.medium;
-  div.appendChild(img) 
+  h4.textContent = `S0${el.season}E0${el.number}` + " - " + el.name;
+  div.style.width = "300px"
+  div.append(img, h4);
   main.appendChild(div);
+  div.innerHTML += el.summary;
 }

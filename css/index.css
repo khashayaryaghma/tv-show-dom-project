@@ -10,5 +10,5 @@ main{
     justify-content: space-around;
 }
 header{
-    background-image: url(../image/Game-Of-Thrones-background.jpg);
+    background-image: url("../image/Game-Of-Thrones-background.jpg");
 }
