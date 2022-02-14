@@ -19,7 +19,7 @@ header{
     background-size: 100% 700px;
     background-position: center;
     background-repeat: no-repeat;
-    height: 250px;
+    min-height: 250px;
 }
 .card{
     width: 280px;
