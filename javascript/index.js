@@ -2048,10 +2048,13 @@ for (const el of data) {
   const div = document.createElement("div");
   const img = document.createElement("img");
   const h4 = document.createElement("h4");
+  const anchor = document.createElement("a");
   img.src = el.image.medium;
   h4.textContent = `S0${el.season}E0${el.number}` + " - " + el.name;
-  div.style.width = "300px"
-  div.append(img, h4);
+  div.style.width = "300px";
+  anchor.href = el._links.self.href;
+  anchor.appendChild(h4);
+  div.append(img, anchor);
   main.appendChild(div);
   div.innerHTML += el.summary;
 }
