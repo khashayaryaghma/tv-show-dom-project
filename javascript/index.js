@@ -2051,7 +2051,9 @@ for (const el of data) {
   const anchor = document.createElement("a");
   const detail = document.createElement("details");
   const sum = document.createElement("summary");
+  const rat = document.createElement("p");
   const search = document.querySelector(".search");
+  rat.textContent = "rating : " + el.rating.average;
   sum.textContent = "summary";
   detail.appendChild(sum);
   img.src = el.image.medium;
@@ -2059,17 +2061,16 @@ for (const el of data) {
   div.classList.add("card");
   anchor.classList.add("links");
   const spl = el.name.split("").concat(el.summary.split(""));
-  
-    search.onchange = ()=>{
-  if(!search.value.includes(spl)){
-    div.style.display ="none"
-  } 
+
+  search.onchange = () => {
+    if (!spl.includes(search.value)) {
+      div.style.display = "none";
     }
- 
+  };
+
   anchor.href = el.url;
   anchor.appendChild(h4);
-  div.append(img, anchor, detail);
+  div.append(img, rat, anchor, detail);
   main.appendChild(div);
   detail.innerHTML += el.summary;
 }
-
