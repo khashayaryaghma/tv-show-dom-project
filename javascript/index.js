@@ -2044,6 +2044,7 @@ const data = [
   },
 ];
 const main = document.querySelector("main");
+let spl;
 for (const el of data) {
   const div = document.createElement("div");
   const img = document.createElement("img");
@@ -2060,14 +2061,13 @@ for (const el of data) {
   h4.textContent = `S0${el.season}E0${el.number}` + " - " + el.name;
   div.classList.add("card");
   anchor.classList.add("links");
-  const spl = el.name.split("").concat(el.summary.split(""));
+  spl += el.name.split("").concat(el.summary.split(""));
 
   search.onchange = () => {
     if (!spl.includes(search.value)) {
       div.style.display = "none";
     }
   };
-
   anchor.href = el.url;
   anchor.appendChild(h4);
   div.append(img, rat, anchor, detail);
