@@ -2051,17 +2051,21 @@ for (const el of data) {
   const anchor = document.createElement("a");
   const detail = document.createElement("details");
   const sum = document.createElement("summary");
+  const search = document.querySelector(".search");
   sum.textContent = "summary";
   detail.appendChild(sum);
   img.src = el.image.medium;
   h4.textContent = `S0${el.season}E0${el.number}` + " - " + el.name;
   div.classList.add("card");
   anchor.classList.add("links");
-
+  const spl = el.name.split("").concat(el.summary.split(""));
+  if(!){
+    div.style.display ="none"
+  }  
   anchor.href = el.url;
   anchor.appendChild(h4);
   div.append(img, anchor, detail);
   main.appendChild(div);
   detail.innerHTML += el.summary;
 }
-const search = document.querySelector(".search");
+
