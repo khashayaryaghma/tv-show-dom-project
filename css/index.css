@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 main{
+    background-image: url("../image/Game-Of-Thrones-10.jpg");
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
