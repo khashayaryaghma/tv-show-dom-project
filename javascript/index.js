@@ -2064,3 +2064,4 @@ for (const el of data) {
   main.appendChild(div);
   detail.innerHTML += el.summary;
 }
+const search = document.querySelector(".search");
