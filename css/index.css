@@ -51,3 +51,6 @@ nav{
     background-color: #d1b697e5;
     color: black;
 }
+.results{
+    list-style: none;
+}
