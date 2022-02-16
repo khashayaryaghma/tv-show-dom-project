@@ -33,8 +33,6 @@ for (const el of data) {
   main.appendChild(div);
   detail.innerHTML += el.summary;
 }
-}).then(()=>{
-  
 }).catch((er)=>console.log(er));
 
 // const results = document.querySelector(".results");
