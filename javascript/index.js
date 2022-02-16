@@ -48,5 +48,3 @@ for (const el of data) {
 //     console.log(ele);
 //   })
 // }
-
-
