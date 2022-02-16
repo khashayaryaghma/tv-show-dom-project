@@ -2044,7 +2044,22 @@ const data = [
   },
 ];
 const main = document.querySelector("main");
-let spl;
+const search = document.querySelector(".search");
+
+// const results = document.querySelector(".results");
+// let searchTerm = "";
+// search.addEventListener("input" , (e)=>{
+//   searchTerm = e.target.value.toLowerCase();
+//   showList()
+// });
+// const showList =()=>{
+//   data.filter((el)=>{
+//     return el.name.toLowerCase().includes(searchTerm) || el.summary.toLowerCase().includes(searchTerm)
+//   }).forEach((ele)=>{
+//     console.log(ele);
+//   })
+// }
+
 for (const el of data) {
   const div = document.createElement("div");
   const img = document.createElement("img");
@@ -2053,7 +2068,6 @@ for (const el of data) {
   const detail = document.createElement("details");
   const sum = document.createElement("summary");
   const rat = document.createElement("p");
-  const search = document.querySelector(".search");
   rat.textContent = "rating : " + el.rating.average;
   sum.textContent = "summary";
   detail.appendChild(sum);
@@ -2061,13 +2075,6 @@ for (const el of data) {
   h4.textContent = `S0${el.season}E0${el.number}` + " - " + el.name;
   div.classList.add("card");
   anchor.classList.add("links");
-  spl += el.name.split("").concat(el.summary.split(""));
-
-  search.onchange = () => {
-    if (!spl.includes(search.value)) {
-      div.style.display = "none";
-    }
-  };
   anchor.href = el.url;
   anchor.appendChild(h4);
   div.append(img, rat, anchor, detail);
