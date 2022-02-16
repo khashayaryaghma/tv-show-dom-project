@@ -1,61 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Gideon Roman', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gideon Roman", cursive;
 }
-main{
-    background-image: url("../image/Game-Of-Thrones-10.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+main {
+  background-image: url("../image/Game-Of-Thrones-10.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-header{
-    background-image: url("../image/Game-Of-Thrones-background.jpg");
-    background-size: 100% 500px;
-    background-position: center;
-    background-repeat: no-repeat;
+header {
+  background-image: url("../image/Game-Of-Thrones-background.jpg");
+  background-size: 100% 500px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.card{
-    width: 280px;
-    text-align: center;
-    min-height: 150px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 90px;
-    margin-bottom: 30px;
-    background-color: #a87030e5;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 7px 5px 5px rgb(66, 15, 15);
+.card {
+  width: 280px;
+  text-align: center;
+  min-height: 150px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 90px;
+  margin-bottom: 30px;
+  background-color: #a87030e5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 7px 5px 5px rgb(66, 15, 15);
 }
-.links{
-    text-decoration: none;
-    color: black;
-
+.links {
+  text-decoration: none;
+  color: black;
 }
-nav{
-    display: flex;
-    justify-content: space-evenly;
+nav {
+  display: flex;
+  justify-content: space-evenly;
 }
-.search{
-    font-size: 20px;
-    text-align: center;
-    margin-top: 215px;
-    margin-bottom: 10px;
-    background-color: #d1b697e5;
-    color: black;
+.search {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 215px;
+  margin-bottom: 10px;
+  background-color: #d1b697e5;
+  color: black;
 }
-.results{
-    list-style: none;
+.results {
+  list-style: none;
 }
-.select{
-    font-size: 15px;
+.select {
+  font-size: 15px;
   height: 1.5rem;
   margin-top: 13.5rem;
   background-color: #d1b697e5;
