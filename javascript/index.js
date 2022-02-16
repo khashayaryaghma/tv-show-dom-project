@@ -33,7 +33,9 @@ for (const el of data) {
   main.appendChild(div);
   detail.innerHTML += el.summary;
 }
-}).then(()=>{});
+}).then(()=>{
+  
+}).catch((er)=>console.log(er));
 
 // const results = document.querySelector(".results");
 // let searchTerm = "";
