@@ -48,6 +48,7 @@ fetchUsers()
         }
       });
       select.addEventListener("change",()=>{
+        search.value = ""
         if (!select.value.includes(h4.textContent)) {
           div.classList.add("hide")
         }else{
