@@ -12,7 +12,7 @@ body {
   background-attachment: fixed;
   min-height: 30rem;
 }
-main{
+main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -38,33 +38,40 @@ nav {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  align-items: baseline;
 }
-header{
+header {
   text-align: center;
-padding: 5rem;
-
+  padding: 4rem;
 }
-h1{
-font-size: 5rem;
-color: rgb(197, 185, 170);
-text-shadow: 7px 5px 5px rgb(66, 15, 15);
+h1 {
+  font-size: 5rem;
+  color: rgb(197, 185, 170);
+  text-shadow: 7px 5px 5px rgb(66, 15, 15);
+  margin-bottom: 1rem;
 }
 .search {
   text-align: center;
-  background-color: #bea68be5;
+  background-color: #d1b697e5;
   color: black;
+  width: 18rem;
+  height: 1.5rem;
+  font-size: 1rem;
 }
 .results {
   list-style: none;
 }
 .select {
   background-color: #d1b697e5;
+  font-size: 1rem;
+  max-width: 20rem;
+  margin-top: 1.5rem;
 }
-.hide{
+.hide {
   display: none;
 }
-@media (max-width: 810px){
-  h1{
+@media (max-width: 810px) {
+  h1 {
     font-size: 3rem;
   }
 }
