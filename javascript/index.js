@@ -7,11 +7,9 @@ const fetchUsers = async () => {
     console.error("something went wrong", error);
   }
 };
-
 const main = document.querySelector("main");
-const search = document.querySelector(".search");
-const select = document.querySelector("select")
-
+const search = document.querySelector("input");
+const select = document.querySelector("select");
 fetchUsers()
   .then((data) => {
     for (const el of data) {
@@ -35,22 +33,20 @@ fetchUsers()
       anchor.appendChild(h4);
       div.append(img, rat, anchor, detail);
       main.appendChild(div);
-      select.appendChild(opt)
+      select.appendChild(opt);
       detail.innerHTML += el.summary;
+      search.addEventListener("keyup", () => {
+        let searchTerm = search.value;
+        if (
+          el.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          el.summary.toLowerCase().includes(searchTerm.toLowerCase())
+        ) {
+          div.classList.remove("hide");
+        } else {
+          div.classList.add("hide");
+        }
+      });
+
     }
   })
   .catch((er) => console.log(er));
-
-// const results = document.querySelector(".results");
-// let searchTerm = "";
-// search.addEventListener("input" , (e)=>{
-//   searchTerm = e.target.value.toLowerCase();
-//   showList()
-// });
-// const showList =()=>{
-//   data.filter((el)=>{
-//     return el.name.toLowerCase().includes(searchTerm) || el.summary.toLowerCase().includes(searchTerm)
-//   }).forEach((ele)=>{
-//     console.log(ele);
-//   })
-// }

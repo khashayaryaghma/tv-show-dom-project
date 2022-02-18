@@ -13,6 +13,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  min-height: 30rem;
 }
 header {
   background-image: url("../image/Game-Of-Thrones-background.jpg");
@@ -60,4 +61,7 @@ nav {
   margin-top: 13.5rem;
   background-color: #d1b697e5;
   margin-bottom: 1rem;
+}
+.hide{
+  display: none;
 }
