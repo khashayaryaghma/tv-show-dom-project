@@ -37,6 +37,7 @@ fetchUsers()
       detail.innerHTML += el.summary;
       search.addEventListener("keyup", () => {
         let searchTerm = search.value;
+        select.value = "All Episodes"
         if (
           el.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
           el.summary.toLowerCase().includes(searchTerm.toLowerCase())
