@@ -23,7 +23,7 @@ main {
   min-height: 150px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 4rem;
   background-color: #a87030e5;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -56,12 +56,20 @@ h1 {
   width: 18rem;
   height: 1.5rem;
   font-size: 1rem;
+  border-radius: 5px;
+  border: solid 2px rgb(73, 48, 48);
+  box-shadow: 2px 2px 9px rgb(36, 8, 8);
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 .select {
   background-color: #d1b697e5;
   font-size: 1rem;
   max-width: 20rem;
   margin-top: 1.5rem;
+  border-radius: 5px;
+  border: solid 2px rgb(73, 48, 48);
+  box-shadow: 2px 2px 9px rgb(36, 8, 8);
 }
 .hide {
   display: none;
