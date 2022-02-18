@@ -51,8 +51,10 @@ fetchUsers()
           div.classList.add("hide")
         }else{
           div.classList.remove("hide")
+        }
+        if(select.value == "All Episodes"){
+          div.classList.remove("hide")
         } 
-
       })
     }
   })
