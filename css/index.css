@@ -23,7 +23,6 @@ main{
   min-height: 150px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 90px;
   margin-bottom: 30px;
   background-color: #a87030e5;
   padding-top: 20px;
@@ -41,26 +40,31 @@ nav {
   flex-wrap: wrap;
 }
 header{
+  text-align: center;
+padding: 5rem;
 
 }
+h1{
+font-size: 5rem;
+color: rgb(197, 185, 170);
+text-shadow: 7px 5px 5px rgb(66, 15, 15);
+}
 .search {
-  /* font-size: 20px; */
   text-align: center;
-  /* margin-top: 215px; */
-  /* margin-bottom: 10px; */
-  background-color: #d1b697e5;
+  background-color: #bea68be5;
   color: black;
 }
 .results {
   list-style: none;
 }
 .select {
-  /* font-size: 15px; */
-  /* height: 1.8rem; */
-  /* margin-top: 13.5rem; */
   background-color: #d1b697e5;
-  /* margin-bottom: 1rem; */
 }
 .hide{
   display: none;
+}
+@media (max-width: 810px){
+  h1{
+    font-size: 3rem;
+  }
 }
