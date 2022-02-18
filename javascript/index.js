@@ -2,7 +2,6 @@ const fetchUsers = async () => {
   try {
     const res = await fetch("https://api.tvmaze.com/shows/82/episodes");
     let data = await res.json();
-
     return data;
   } catch (error) {
     console.error("something went wrong", error);
