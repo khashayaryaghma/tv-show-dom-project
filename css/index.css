@@ -41,6 +41,7 @@ header {
 nav {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .search {
   font-size: 20px;
@@ -54,8 +55,9 @@ nav {
   list-style: none;
 }
 .select {
-  font-size: 15px;
-  height: 1.5rem;
+  /* font-size: 15px; */
+  height: 1.8rem;
   margin-top: 13.5rem;
   background-color: #d1b697e5;
+  margin-bottom: 1rem;
 }

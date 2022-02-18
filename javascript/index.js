@@ -2,16 +2,7 @@ const fetchUsers = async () => {
   try {
     const res = await fetch("https://api.tvmaze.com/shows/82/episodes");
     let data = await res.json();
-    search.addEventListener("keydown", (e) => {
-      data = data.filter((dat) => {
-        if (
-          dat.name.includes(e.target.value) ||
-          dat.summary.includes(e.target.value)
-        ) {
-          return dat;
-        }
-      });
-    });
+
     return data;
   } catch (error) {
     console.error("something went wrong", error);
@@ -33,7 +24,6 @@ fetchUsers()
       const sum = document.createElement("summary");
       const rat = document.createElement("p");
       const opt = document.createElement("option");
-
       opt.textContent = `S0${el.season}E0${el.number}` + " - " + el.name;
       rat.textContent = "rating : " + el.rating.average;
       sum.textContent = "summary";
