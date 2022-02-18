@@ -46,7 +46,14 @@ fetchUsers()
           div.classList.add("hide");
         }
       });
+      select.addEventListener("change",()=>{
+        if (!select.value.includes(h4.textContent)) {
+          div.classList.add("hide")
+        }else{
+          div.classList.remove("hide")
+        } 
 
+      })
     }
   })
   .catch((er) => console.log(er));
