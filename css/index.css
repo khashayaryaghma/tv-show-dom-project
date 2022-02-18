@@ -52,9 +52,7 @@ h1 {
 }
 .search {
   text-align: center;
-  background-color: #d1b697e5;
   font-size: 1.25rem;
-  border-radius: 5px;
   margin-right: 1rem;
   margin-left: 1rem;
 }
@@ -64,12 +62,12 @@ h1 {
   box-shadow: 2px 2px 9px rgb(36, 8, 8);
   height: 1.75rem;
   width: 20rem;
+  border-radius: 5px;
+  background-color: #d1b697e5;
 }
 .select {
-  background-color: #d1b697e5;
   font-size: 1rem;
   margin-top: 1.5rem;
-  border-radius: 5px;
 }
 .hide {
   display: none;
