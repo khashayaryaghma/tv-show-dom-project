@@ -5,21 +5,17 @@
   box-sizing: border-box;
   font-family: "Gideon Roman", cursive;
 }
-main {
-  background-image: url("../image/Game-Of-Thrones-10.jpg");
+body {
+  background-image: url("../image/main-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  min-height: 30rem;
+}
+main{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  min-height: 30rem;
-}
-header {
-  background-image: url("../image/Game-Of-Thrones-background.jpg");
-  background-size: 100% 500px;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .card {
   width: 280px;
@@ -44,11 +40,14 @@ nav {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+header{
+
+}
 .search {
-  font-size: 20px;
+  /* font-size: 20px; */
   text-align: center;
-  margin-top: 215px;
-  margin-bottom: 10px;
+  /* margin-top: 215px; */
+  /* margin-bottom: 10px; */
   background-color: #d1b697e5;
   color: black;
 }
@@ -57,10 +56,10 @@ nav {
 }
 .select {
   /* font-size: 15px; */
-  height: 1.8rem;
-  margin-top: 13.5rem;
+  /* height: 1.8rem; */
+  /* margin-top: 13.5rem; */
   background-color: #d1b697e5;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 .hide{
   display: none;
