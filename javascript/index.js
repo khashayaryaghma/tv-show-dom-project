@@ -53,7 +53,7 @@ fetchUsers()
         }else{
           div.classList.remove("hide")
         }
-        if(select.value == "All Episodes"){
+        if(select.value === "All Episodes"){
           div.classList.remove("hide")
         } 
       })
