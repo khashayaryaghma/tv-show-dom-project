@@ -46,9 +46,6 @@ fetchUsers()
         } else {
           div.classList.add("hide");
         }
-        if (searchTerm.toLowerCase() === "hadi") {
-          alert("soltan");
-        }
       });
       select.addEventListener("change", () => {
         if (!select.value.includes(h4.textContent)) {
