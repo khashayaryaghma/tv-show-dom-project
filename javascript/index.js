@@ -37,7 +37,7 @@ fetchUsers()
       detail.innerHTML += el.summary;
       search.addEventListener("keyup", () => {
         let searchTerm = search.value;
-        select.value = "All Episodes"
+        select.value = "All Episodes";
         if (
           el.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
           el.summary.toLowerCase().includes(searchTerm.toLowerCase())
@@ -46,17 +46,20 @@ fetchUsers()
         } else {
           div.classList.add("hide");
         }
-      });
-      select.addEventListener("change",()=>{
-        if (!select.value.includes(h4.textContent)) {
-          div.classList.add("hide")
-        }else{
-          div.classList.remove("hide")
+        if (searchTerm.toLowerCase() === "hadi") {
+          alert("soltan");
         }
-        if(select.value === "All Episodes"){
-          div.classList.remove("hide")
-        } 
-      })
+      });
+      select.addEventListener("change", () => {
+        if (!select.value.includes(h4.textContent)) {
+          div.classList.add("hide");
+        } else {
+          div.classList.remove("hide");
+        }
+        if (select.value === "All Episodes") {
+          div.classList.remove("hide");
+        }
+      });
     }
   })
   .catch((er) => console.log(er));
