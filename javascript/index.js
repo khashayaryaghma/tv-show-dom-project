@@ -7,6 +7,7 @@ const fetchUsers = async () => {
     console.error("something went wrong", error);
   }
 };
+
 const main = document.querySelector("main");
 const search = document.querySelector("input");
 const select = document.querySelector("select");
