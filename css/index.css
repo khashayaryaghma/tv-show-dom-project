@@ -16,11 +16,12 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: flex-start;
 }
 .card {
   width: 280px;
   text-align: center;
-  min-height: 150px;
+  min-height: 280px;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 4rem;
